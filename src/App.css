@@ -1,38 +1,124 @@
-.App {
+* {
   text-align: center;
+  background-color: #0E5E6F;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 170px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  color: #D6E4E5;
+  font-size: 50px;
+  font-family: Noto Serif Toto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#break-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#break-length {
+  padding: 5px;
+  font-size: 30px;
+  font-family: Noto Serif Toto;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#break-decrement, #break-increment, #session-increment, #session-decrement {
+  cursor: pointer;
+  color: #D6E4E5;
+}
+
+#break-container > button {
+  border: none;
+  background-color: #0E5E6F;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#session-length {
+  padding: 5px;
+  font-size: 30px;
+  color: #D6E4E5;
+  font-family: Noto Serif Toto;
+  font-weight: bold;
+}
+
+#session-container {
+  display: flex;
+  justify-content: center;
+}
+
+#session-container > button {
+  border: none;
+  background-color: #0E5E6F;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#break-label {
+  float: left;
+  color: #D6E4E5;
+  font-family: Noto Serif Toto;
+}
+
+#break-label > h2 {
+  margin-bottom: 0;
+  font-size: 30px;
+}
+
+#session-label {
+  float: right;
+  color: #D6E4E5;
+  font-family: Noto Serif Toto;
+}
+
+#session-label > h2 {
+  margin-bottom: 0;
+  font-size: 30px; 
+}
+
+.timer-container {
+  border: solid 5px #3A8891;
+  margin-top: 160px;
+  width: 190px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  color: #D6E4E5;
+}
+
+#time-left {
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-family: Noto Serif Toto;
+}
+
+#title {
+  font-family: Noto Serif Toto;
+  font-size: 30px;
+}
+
+#start_stop {
+  border: none;
+  background-color: #0E5E6F;
+  font-size: 30px;
+  padding-right: 10px;
+  color: #D6E4E5;
+  cursor: pointer;
+}
+
+#reset{
+  border: none;
+  background-color: #0E5E6F;
+  font-size: 30px;
+  color: #D6E4E5;
+  cursor: pointer;
 }
